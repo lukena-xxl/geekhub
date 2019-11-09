@@ -1,0 +1,131 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "title": "Category 1"
+        },
+        {
+            "id": 2,
+            "title": "Category 2"
+        },
+        {
+            "id": 3,
+            "title": "Category 3"
+        },
+        {
+            "id": 4,
+            "title": "Category 4"
+        },
+        {
+            "id": 5,
+            "title": "Category 5"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "id_category": "1",
+            "title": "Product 1",
+            "price": 86,
+            "stock": 5
+        },
+        {
+            "id": 2,
+            "id_category": 2,
+            "title": "Product 2",
+            "price": 85,
+            "stock": 9
+        },
+        {
+            "id": 3,
+            "id_category": 1,
+            "title": "Product 3",
+            "price": 28,
+            "stock": 4
+        },
+        {
+            "id": 4,
+            "id_category": 4,
+            "title": "Product 4",
+            "price": 10,
+            "stock": 8
+        },
+        {
+            "id": 5,
+            "id_category": 4,
+            "title": "Product 5",
+            "price": 35,
+            "stock": 7
+        },
+        {
+            "id": 6,
+            "id_category": 2,
+            "title": "Product 6",
+            "price": 61,
+            "stock": 5
+        },
+        {
+            "id": 7,
+            "id_category": 4,
+            "title": "Product 7",
+            "price": 17,
+            "stock": 2
+        },
+        {
+            "id": 8,
+            "id_category": 3,
+            "title": "Product 8",
+            "price": 29,
+            "stock": 1
+        },
+        {
+            "id": 9,
+            "id_category": 1,
+            "title": "Product 9",
+            "price": 85,
+            "stock": 1
+        },
+        {
+            "id": 10,
+            "id_category": 5,
+            "title": "Product 10",
+            "price": 10,
+            "stock": 5
+        },
+        {
+            "id": 11,
+            "id_category": 1,
+            "title": "New Product",
+            "price": 78,
+            "stock": 2
+        },
+        {
+            "id": 12,
+            "id_category": 4,
+            "title": "New Product",
+            "price": 89,
+            "stock": 7
+        },
+        {
+            "id": 13,
+            "id_category": 3,
+            "title": "New Product",
+            "price": 39,
+            "stock": 6
+        },
+        {
+            "id": 14,
+            "id_category": 2,
+            "title": "New Product",
+            "price": 98,
+            "stock": 3
+        },
+        {
+            "id": 15,
+            "id_category": 1,
+            "title": "Apple",
+            "price": 49,
+            "stock": 6
+        }
+    ]
+}
