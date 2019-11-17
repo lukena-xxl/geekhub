@@ -25,3 +25,13 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    App\Services\Common\MailInformer:
+        arguments:
+            $email_admin: '%env(EMAIL_ADMIN)%'
+            $email_transfer: '%env(EMAIL_TRANSFER)%'
+
+    App\Services\Common\TelegramInformer:
+        arguments:
+            $tm_token: '%env(TELEGRAM_BOT_TOKEN)%'
+            $tm_user_id: '%env(TELEGRAM_USER_ID)%'
