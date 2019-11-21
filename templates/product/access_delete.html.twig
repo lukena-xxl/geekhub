@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Product deleted!{% endblock %}
+
+{% block body %}
+    <div class="alert alert-success" role="alert">
+        The product "{{ product.title }}" have been deleted!
+    </div>
+    <a class="mt-3" href="{{ path('product_show_all') }}">Go to the list of products</a>
+{% endblock %}
