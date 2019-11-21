@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Category deleted!{% endblock %}
+
+{% block body %}
+    <div class="alert alert-success" role="alert">
+        The category "{{ category.title }}" and all products in this category have been deleted!
+    </div>
+    <a class="mt-3" href="{{ path('category_show_all') }}">Go to the list of categories</a>
+{% endblock %}

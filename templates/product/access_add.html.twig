@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Product successfully added!{% endblock %}
+
+{% block body %}
+    <div class="alert alert-success" role="alert">
+        Product "{{ product.title }}" successfully added!
+    </div>
+    <a class="btn btn-info mt-3" href="{{ path('product_show', {'id': product.id}) }}" role="button">Show product</a>
+    <a class="btn btn-success mt-3" href="{{ path('product_add') }}" role="button">Add more</a>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Product change{% endblock %}
+
+{% block body %}
+    <h1>Product change</h1>
+    <form method="post" action="{{ path('product_edit', {'id': product.id}) }}">
+        <div class="form-group">
+            <label for="formGroupTitle">Product name</label>
+            <input type="text" name="title" value="{{ product.title }}" class="form-control w-50" id="formGroupTitle" placeholder="Enter a product name">
+        </div>
+        <div class="form-group">
+            <label for="formGroupCategory">Product category</label>
+            <select name="id_category" class="form-control w-50" id="formGroupCategory">
+                <option value="" class="text-muted">Select a category</option>
+                {% if categories %}
+                    {% for category in categories %}
+                        <option value="{{ category.id }}"{% if category.id == product.idCategory %} selected{% endif %}>{{ category.title }}</option>
+                    {% endfor %}
+                {% endif %}
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="formGroupPrice">Product price</label>
+            <input type="number" name="price" value="{{ product.price }}" class="form-control w-25" id="formGroupPrice" placeholder="Enter a product price">
+        </div>
+        <div class="form-group">
+            <label for="formGroupStock">Product stock</label>
+            <input type="number" name="stock" value="{{ product.stock }}" class="form-control w-25" id="formGroupStock" placeholder="Enter a product stock">
+        </div>
+        <input type="hidden" name="id" value="{{ product.id }}">
+        <button type="submit" class="btn btn-success mt-3">Save changes</button>
+    </form>
+{% endblock %}
